@@ -71,20 +71,20 @@ body {
 }
 
 .section7 {     
-  grid-column: 2 / 3;     /* spans both columns */
+  grid-column: 2 / 3;    
   background:  #ff00b7 ;    /* red */
   height: 120px;
 }
 
 .section8 {
    
-  grid-column: 3 / 4;     /* spans both columns */
+  grid-column: 3 / 4;     
   background:  #ff00b7 ;    /* red */
   height: 120px;
 }
 
 .section9 {    
-  grid-column: 1 / 4;     /* spans both columns */
+  grid-column: 1 / 4;     
   background: #e74c3c;    /* red */
   height: 80px;
 }
@@ -112,3 +112,4 @@ body {
     max-width: 800px;
   }
 }
+
