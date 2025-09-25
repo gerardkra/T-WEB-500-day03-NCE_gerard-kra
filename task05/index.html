@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gérard KRA</title>
+
+    <!-- Materialize CSS and Material Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="grey lighten-4">
+
+    <!-- Header Section -->
+    <header class="teal darken-2 white-text center-align" style="padding: 40px 0;">
+        <h2>Gérard KRA</h2>
+        <div class="white grey-text text-darken-3" style="padding: 20px; margin: 20px auto; max-width: 400px; border-radius: 4px;">
+            <h4>Full Stack Developer</h4>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="container">
+        <h3 class="center-align">About me</h3>
+        <div class="row">
+            <!-- Story -->
+            <div class="col s12 m4">
+                <h5 class="center-align">Story</h5>
+                <p>I am a passionate Full Stack Developer with 5+ years of experience. I specialize in modern JavaScript frameworks and work on both frontend and backend projects.</p>
+            </div>
+
+            <!-- Profile -->
+            <div class="col s12 m4">
+                <h5 class="center-align">Profile</h5>
+                <div class="card teal darken-2">
+                    <div class="card-content white-text">
+                        <div class="row valign-wrapper">
+                            <div class="col s4">
+                                <img src="images/photo1.jpg" alt="Profile Picture" class="circle responsive-img">
+                            </div>
+                            <div class="col s8">
+                                <span class="card-title">Gérard KRA</span>
+                                <p>Developer passionate about creating innovative web solutions and mentoring others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/gerardkra" class="white-text">GitHub</a>
+                        <a href="https://www.linkedin.com/in/g%C3%A9rardkra-data-engineer-devops-nlp-data-science-telecom" class="white-text">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="col s12 m4">
+                <h5 class="center-align">Skills</h5>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>JavaScript</td><td>Expert (5+ years)</td></tr>
+                        <tr class="grey lighten-3"><td>React</td><td>Advanced</td></tr>
+                        <tr><td>Node.js</td><td>Advanced</td></tr>
+                        <tr class="grey lighten-3"><td>Python</td><td>Intermediate</td></tr>
+                        <tr><td>MongoDB</td><td>Advanced</td></tr>
+                        <tr class="grey lighten-3"><td>PostgreSQL</td><td>Advanced</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="container">
+  <h3 class="center-align">Portfolio</h3>
+  <div class="row equal-cards">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/e-commerce.png">
+          <span class="card-title">E-Commerce Website</span>
+        </div>
+        <div class="card-content">
+          <p>A full-featured online store built with React and Node.js, including shopping cart, payment integration, and admin dashboard.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+           <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?crop=entropy&cs=tinysrgb&fit=max&h=200&w=300" alt="Portfolio Website">
+           <span class="card-title">Portfolio Website</span>
+        </div>
+        <div class="card-content">
+          <p>A personal portfolio website showcasing projects, skills, and contact form. Built with HTML, CSS, and Materialize.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/taskmanager.png">
+          <span class="card-title">Task Manager App</span>
+        </div>
+        <div class="card-content">
+          <p>A productivity web app for managing tasks and projects. Built with React, Redux, and Firebase for real-time updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Put this after Materialize CSS -->
+<style>
+  /* Make cards equal height per row and keep layout responsive */
+  #portfolio .row.equal-cards {
+    display: flex;
+    flex-wrap: wrap;          /* keep Materialize's wrapping */
+    align-items: stretch;     /* stretch cols to tallest card */
+  }
+  #portfolio .row.equal-cards > .col {
+    display: flex;            /* allow the card to stretch inside the column */
+  }
+  #portfolio .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Uniform image box so card tops align (change ratio if you prefer) */
+  #portfolio .card .card-image {
+    aspect-ratio: 16 / 9;     /* try 4/3 or 1/1 if you like */
+    overflow: hidden;
+  }
+  #portfolio .card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* crop to fill */
+    display: block;
+  }
+
+  /* Let content flex to fill available space so bottoms align */
+  #portfolio .card .card-content {
+    flex: 1 1 auto;
+  }
+
+  /* Optional: if you add .card-action, keep it pinned to the bottom */
+  #portfolio .card .card-action {
+    margin-top: auto;
+  }
+</style>
+
+    <!-- Last Projects Section -->
+    <section class="container">
+        <h3 class="center-align">Last projects</h3>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?crop=entropy&cs=tinysrgb&fit=max&h=200&w=300" alt="Weather App">
+                        <span class="card-title">Weather App</span>
+                    </div>
+                    <div class="card-content">
+                        <p>A web app showing weather forecasts using OpenWeather API. Built with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?crop=entropy&cs=tinysrgb&fit=max&h=200&w=300" alt="Blog Platform">
+                        <span class="card-title">Blog Platform</span>
+                    </div>
+                    <div class="card-content">
+                        <p>A multi-user blogging platform with authentication, CRUD posts, and comments. Built with Node.js and MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?crop=entropy&cs=tinysrgb&fit=max&h=200&w=300" alt="Chat App">
+                        <span class="card-title">Chat App</span>
+                    </div>
+                    <div class="card-content">
+                        <p>A real-time chat application with multiple rooms and private messaging. Built with Socket.io and Node.js.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container">
+        <h3 class="center-align">Contact</h3>
+        <form>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="lastname" type="text"><label for="lastname">Lastname</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="firstname" type="text"><label for="firstname">Firstname</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email"><label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="message" class="materialize-textarea" placeholder="Your message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light teal darken-2" type="submit">
+                    Send Message <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer spacing -->
+    <div style="height: 50px;"></div>
+
+    <!-- Scripts for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit(); // initialize Materialize components
+        });
+    </script>
+</body>
+</html>

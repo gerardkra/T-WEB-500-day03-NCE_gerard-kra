@@ -1,0 +1,114 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background and centering */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;   /* light gray */
+  min-height: 100vh;           /* take full screen height */
+  display: flex;               /* flexbox to center content */
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+}
+
+/* Tablet frame */
+.tablet-container {
+  width: 100%;
+  max-width: 900px;            /* max size */
+  background: white;
+  border: 3px solid #ddd;      /* gray border */
+  border-radius: 20px;         /* rounded corners */
+  padding: 20px;               /* space inside */
+}
+
+/* Layout grid: 2 columns, multiple rows */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  /* 3 equal columns */
+  gap: 10px;                       /* space between blocks */
+  height: 600px;
+}
+
+/* Sections (colored blocks) */
+.section1 {
+  grid-column: 1 / 2;     /* first column */
+  background: #5dade2;    /* blue */
+  height: 80px;
+}
+
+.section2 {
+  grid-column: 1 / 4;     /* spans three columns */
+  background: #7fb069;    /* green */
+  height: 120px;
+}
+
+.section3 {
+  grid-column: 1 / 2;     /* first column */
+  background: #f7dc6f;    /* yellow */
+  height: 120px;
+}
+
+.section4 {
+  grid-column: 2 / 3;     /* two columns */
+  background: #f7dc6f;    /* yellow */
+  height: 120px;
+}
+
+.section5 {
+  grid-column: 3 / 4;     
+  background: #8e44ad;    /* purple */
+  height: 120px;
+}
+
+.section6 {
+  grid-column: 1 / 2;    
+  background: #8e44ad;    /* purple */
+  height: 120px;
+}
+
+.section7 {     
+  grid-column: 2 / 3;     /* spans both columns */
+  background:  #ff00b7 ;    /* red */
+  height: 120px;
+}
+
+.section8 {
+   
+  grid-column: 3 / 4;     /* spans both columns */
+  background:  #ff00b7 ;    /* red */
+  height: 120px;
+}
+
+.section9 {    
+  grid-column: 1 / 4;     /* spans both columns */
+  background: #e74c3c;    /* red */
+  height: 80px;
+}
+
+/* 📱 Responsive for mobile screens */
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 10px;
+  }
+
+  .tablet-container {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .layout-grid {
+    height: auto;   /* let it grow naturally */
+    grid-template-columns: 1fr; /* stack everything in 1 column */
+  }
+}
+
+/* 💻 Responsive for large screens */
+@media screen and (min-width: 1024px) {
+  .tablet-container {
+    max-width: 800px;
+  }
+}
